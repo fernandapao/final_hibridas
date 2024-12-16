@@ -22,7 +22,7 @@ const app = express();
 
 //para error de cors
 const options = {
-    origin: '*',
+    origin: 'http://localhost:5173',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     AllowedHeathers: ['Content-Type', 'Authorization'],
     credentials: true
