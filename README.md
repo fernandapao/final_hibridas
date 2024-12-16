@@ -1,4 +1,4 @@
-Aplicaciones Hibridas - Parcial 2
+Aplicaciones Hibridas - Final
 
 Este proyecto es una aplicación que permite gestionar y buscar novedades y funciones. Está desarrollada utilizando React en el frontend y Node.js con Express en el backend. La base de datos utilizada es MongoDB.
 
@@ -29,34 +29,17 @@ categoria (string): La categoría a la que pertenece.
 descripcion (string): Información adicional sobre la novedad.
 Configuración y Ejecución
 
-Requisitos Previos
-Node.js y npm instalados.
-MongoDB en funcionamiento.
 
-Instrucciones
+
+Repositorio y link al proyecto en linea.
 
 Clona el repositorio:
 git clone <https://github.com/fernandapao/hibridas-parcial-dos-bustos-paoliello.git>
 
+Link del proyecto:
 
-Instala las dependencias del backend:
-cd api
-npm install
+https://final-hibridas-fmps.vercel.app/
 
-Instala las dependencias del frontend:
-cd client
-npm install
-
-Configura las variables de entorno en el backend (archivo .env):
-MONGO_URI=mongodb://localhost:27017/gestor_novedades
-PORT=3000
-
-Inicia el servidor de desarrollo:
-- En client: npm run dev
-- En api: npm start
-
-Uso:
-Una vez que el servidor esté ejecutándose, accede a la aplicación por el vinculo del vite.
 
 Autoras:
 - Bustos, Cintia
