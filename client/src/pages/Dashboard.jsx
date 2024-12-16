@@ -30,6 +30,29 @@ function Dashboard() {
         <Route path="novedades/editar/:id" element={<NovedadForm />} />
       
       </Routes>
+
+      <footer className="footer">
+        <div className="container footer">
+          <div className="row py-4">
+            <div className="col-md-6 text-start mb-3">
+              <a className="navbar-brand d-flex align-items-center">
+                <img
+                  src="img/aero-asist-03.png"
+                  alt="Logo AeroAsist"
+                  className="logo-nav me-2"
+                  style={{ width: "200px" }}
+                />
+              </a>
+              <p className="mb-1 text-light">Bustos Cintia</p>
+              <p className="text-light">Paoliello Fernanda</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="footer-bottom text-center py-2">
+          <p className="derechos text-light">&copy; 2024 AeroAsist | Todos los derechos reservados</p>
+        </div>
+      </footer>
     </div>
   );
 }
