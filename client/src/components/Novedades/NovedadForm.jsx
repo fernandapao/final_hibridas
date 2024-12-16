@@ -102,7 +102,7 @@ function NovedadForm() {
             required 
           />
         </div>
-        <div>
+        {/* <div>
           <label>Imagen:</label>
           <input 
             type="file" 
@@ -110,7 +110,7 @@ function NovedadForm() {
             onChange={handleImageChange}
           />
           {imagen && <img src={imagen} alt="Preview" width="100" />} Vista previa de la imagen cargada
-        </div>
+        </div> */}
         <button type="submit">{id ? 'Actualizar' : 'Guardar'}</button>
       </form>
     </div>
