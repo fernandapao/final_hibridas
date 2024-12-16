@@ -5,12 +5,16 @@ import 'dotenv/config';
 import cors from "cors";
 import fs from 'fs';
 
+const url = process.env.DB_URL;
 
 
-
-mongoose.connect('mongodb://127.0.0.1:27017/aplihibridas')
-  .then(() => console.log('Conexión con Mongo exitosa!'))
-  .catch((error) => console.error('Error al conectar con MongoDB:', error));
+mongoose.connect(url)
+  .then(() => {
+    console.log('Conexión con Mongo exitosa!');
+  })
+  .catch(err => {
+    console.error('Error al conectar a MongoDB:', err);
+  });
 
 
 const app = express();
