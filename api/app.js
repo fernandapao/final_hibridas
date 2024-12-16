@@ -22,7 +22,8 @@ const app = express();
 
 //para error de cors
 const options = {
-    origin: 'http://localhost:5173',
+    // origin: 'http://localhost:5173',
+    origin: 'https://final-hibridas-fmps.vercel.app/',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     AllowedHeathers: ['Content-Type', 'Authorization'],
     credentials: true
