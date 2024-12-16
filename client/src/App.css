@@ -161,3 +161,34 @@ button.btn-abm.btn-danger.btn-sm {
 .card-title {
   font-weight: bold;
 }
+
+/* tarjetas novedades */
+
+.novedad-card {
+  display: flex;
+  flex-direction: column; 
+  height: 100%; 
+}
+
+.novedad-card .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem; 
+}
+
+.novedad-card .card-title {
+  margin-bottom: 0.5rem;
+}
+
+.novedad-card .novedad-buttons {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between; 
+  gap: 0.5rem; 
+  padding-top: 1rem; 
+}
+
+.novedad-card .novedad-buttons button {
+  width: 48%;
+}
