@@ -122,3 +122,15 @@ nav ul li a {
   right: 0; 
   z-index: 1;
 }
+
+.dashboard-menu {
+  padding: 20px;
+}
+
+.dashboard-body {
+  background-image: url(img/back-admin.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 100%;
+  background-position: left bottom;
+}

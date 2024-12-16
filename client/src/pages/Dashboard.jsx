@@ -7,7 +7,7 @@ import NovedadForm from '../components/Novedades/NovedadForm';
 
 function Dashboard() {
   return (
-    <div>
+    <div className="dashboard-body">
       <div className="dashboard-section">
         <h1 className="titulo-dashboard mb-3">
           <span>Panel de Administrador</span>
