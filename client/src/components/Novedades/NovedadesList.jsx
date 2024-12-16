@@ -108,7 +108,7 @@ function NovedadesList() {
   <div className="novedades-container">
   {novedades.map((novedad) => (
     <div className="novedad-card" key={novedad._id}>
-      {novedad.imagen && <img src={novedad.imagen} alt={novedad.nombre} width="100" />} {/* Mostrar imagen */}
+      {/* {novedad.imagen && <img src={novedad.imagen} alt={novedad.nombre} width="100" />} Mostrar imagen */}
       <h3>{novedad.nombre}</h3>
       <p>{novedad.descripcion}</p>
       <p>Categoría: {novedad.categoria}</p>

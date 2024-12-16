@@ -36,12 +36,12 @@ function NovedadForm() {
     setFormData({...formData, [e.target.name]: e.target.value});
   };
 
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      setFormData({ ...formData, imagen: URL.createObjectURL(file) }); // Puedes utilizar una URL temporal para previsualizar la imagen
-    }
-  };
+  // const handleImageChange = (e) => {
+  //   const file = e.target.files[0];
+  //   if (file) {
+  //     setFormData({ ...formData, imagen: URL.createObjectURL(file) }); // Puedes utilizar una URL temporal para previsualizar la imagen
+  //   }
+  // };
 
 
   const handleSubmit = async (e) => {
