@@ -3,7 +3,6 @@ import { novedadesValidacion } from "../validaciones/validaciones.js";
 
 export const getNovedades = async (req, res) => {
     try {
-       
         const page = parseInt(req.query.page) || 1;  
         const limit = parseInt(req.query.limit) || 10; 
         const novedades = await Novedad.paginate({}, { page, limit });

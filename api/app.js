@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import { usersRoutes, novedadesRoutes, funcionesRoutes } from './routes/index.js';
 import 'dotenv/config';
 import cors from "cors";
+import fs from 'fs';
 
 
 
@@ -25,7 +26,6 @@ const options = {
 }
 
 app.use(cors(options));
-
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
