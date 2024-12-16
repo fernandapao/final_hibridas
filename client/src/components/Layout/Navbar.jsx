@@ -21,7 +21,7 @@ function Navbar() {
         {user ? (
           <>
             <li><Link to="/dashboard">Admin</Link></li>
-            <li><Link onClick={handleLogout}>Cerrar Sesión</Link></li>
+            <li><Link to="/" onClick={handleLogout}>Cerrar Sesión</Link></li>
           </>
         ) : (
           <>
