@@ -22,7 +22,7 @@ const app = express();
 
 //para error de cors
 const options = {
-    origin: 'https://final-hibridas-fmps.vercel.app/',
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     AllowedHeathers: ['Content-Type', 'Authorization'],
     credentials: true
