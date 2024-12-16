@@ -55,3 +55,70 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
+
+/* footer */
+.footer {
+  background-color: #113C73;
+  color: whitesmoke;
+}
+
+.footer p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.container.footer {
+  padding: 20px;
+}
+
+.derechos{
+  padding: 20px;
+}
+
+/* -------------------------------TITULOS */
+
+.titulo-dashboard {
+  font-size: 8rem;
+  color: #F1C40F; 
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2); 
+  font-weight: bold; 
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  height: 40%;
+}
+
+.titulo-dashboard span {
+  color: #ffffff;
+  top: 0; 
+  left: 15%; 
+}
+
+.dashboard-section {
+  background-image: url('../img/salas_vip/fondo-servicios.jpg'); 
+  background-size: cover; 
+  background-position: bottom; 
+  padding: 50px 0; 
+  position: relative; 
+}
+
+.dashboard-section::before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+}
+
+.linea-amarilla {
+  height: 30px; 
+  background-color: #F1C40F; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  z-index: 1;
+}

@@ -19,17 +19,6 @@ mongoose.connect(url)
 const app = express();
 
 
-//para error de cors
-// const options = {
-//     origin: 'final-hibridas-fmps.vercel.app',
-//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-//     AllowedHeathers: ['Content-Type', 'Authorization'],
-//     credentials: true
-    
-// }
-
-// app.use(cors(options));
-
 const allowedOrigins = ['https://final-hibridas-fmps.vercel.app'];
 
 const corsOptions = {

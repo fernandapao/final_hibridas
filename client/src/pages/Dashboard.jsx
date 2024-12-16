@@ -7,17 +7,14 @@ import NovedadForm from '../components/Novedades/NovedadForm';
 
 function Dashboard() {
   return (
-    <div className="dashboard-container">
-      <div className=" text-center">
-              <img
-                src="img/aero-asist-01.png"
-                alt="Logo AeroAsist"
-                className="img-fluid logo-image mb-3"
-              />
-      <h1 className='fw-bold fs-4'>Panel de Administración</h1>
+    <div>
+      <div className="dashboard-section">
+        <h1 className="titulo-dashboard mb-3">
+          <span>Panel de Administrador</span>
+        </h1>
+        <div className="linea-amarilla"></div>
       </div>
 
-      
       <div className="dashboard-menu">
         <ul>
           <li><Link to="funciones">Funciones</Link></li>
