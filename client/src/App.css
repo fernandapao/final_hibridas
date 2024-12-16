@@ -154,6 +154,10 @@ Routes {
   width: 100%;
 }
 
-.btn-abm {
-  margin: 20px;
+button.btn-abm.btn-danger.btn-sm {
+  margin-left: 20px;
+}
+
+.card-title {
+  font-weight: bold;
 }

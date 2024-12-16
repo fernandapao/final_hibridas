@@ -108,13 +108,13 @@ function NovedadesList() {
   <div className="novedades-container">
   {novedades.map((novedad) => (
     <div className="novedad-card" key={novedad._id}>
-      <h3>{novedad.nombre}</h3>
+      <h3 class="card-title">{novedad.nombre}</h3>
       <p>{novedad.descripcion}</p>
-      <p>Categoría: {novedad.categoria}</p>
-      <p>Fecha: {new Date(novedad.fecha).toLocaleDateString()}</p>
+      <p><strong>Categoría:</strong> {novedad.categoria}</p>
+      <p><strong>Fecha:</strong> {new Date(novedad.fecha).toLocaleDateString()}</p>
         <div className="novedad-buttons">
-          <button onClick={() => handleEdit(novedad._id)} className="btn-editar">Editar</button>
-          <button onClick={() => handleDelete(novedad._id)} className="btn-eliminar">Eliminar</button>
+          <button onClick={() => handleEdit(novedad._id)} className="btn-abm btn-warning btn-sm">Editar</button>
+          <button onClick={() => handleDelete(novedad._id)} className="btn-abm btn-danger btn-sm">Eliminar</button>
         </div>
       </div>
     ))}
