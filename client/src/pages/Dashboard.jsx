@@ -32,9 +32,7 @@ function Dashboard() {
       </Routes>
 
       <footer className="footer">
-        <div className="container footer">
-          <div className="row py-4">
-            <div className="col-md-6 text-start mb-3">
+        <div className="container footer text-center">
               <a className="navbar-brand d-flex align-items-center">
                 <img
                   src="img/aero-asist-03.png"
@@ -45,8 +43,6 @@ function Dashboard() {
               </a>
               <p className="mb-1 text-light">Bustos Cintia</p>
               <p className="text-light">Paoliello Fernanda</p>
-            </div>
-          </div>
         </div>
 
         <div className="footer-bottom text-center py-2">
