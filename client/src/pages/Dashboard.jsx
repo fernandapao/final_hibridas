@@ -10,7 +10,7 @@ function Dashboard() {
     <div className="dashboard-container">
       <div className=" text-center">
               <img
-                src="img/aero-asist-01.png"
+                src="../public/img/aero-asist-01.png"
                 alt="Logo AeroAsist"
                 className="img-fluid logo-image mb-3"
               />

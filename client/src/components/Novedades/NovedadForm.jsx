@@ -43,6 +43,7 @@ function NovedadForm() {
     }
   };
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -108,7 +109,7 @@ function NovedadForm() {
             name="imagen"
             onChange={handleImageChange}
           />
-          {imagen && <img src={imagen} alt="Preview" width="100" />} {/* Vista previa de la imagen cargada */}
+          {imagen && <img src={imagen} alt="Preview" width="100" />} Vista previa de la imagen cargada
         </div>
         <button type="submit">{id ? 'Actualizar' : 'Guardar'}</button>
       </form>

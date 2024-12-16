@@ -14,13 +14,13 @@ function Home() {
           
             <div className="col-md-6 text-center">
               <img
-                src="img/aero-asist-01.png"
+                src="../public/img/aero-asist-01.png"
                 alt="Logo AeroAsist"
                 className="img-fluid logo-image mb-3"
               />
                 <h2 className="frase text-center">¡Tu aventura comienza aquí!</h2>
               <img
-                src="img/ilustracion-home.png"
+                src="../public/img/ilustracion-home.png"
                 alt="Imagen ilustración"
                 className="img-fluid illustration-image"
               />
@@ -28,7 +28,7 @@ function Home() {
 
             <div className="col-md-6 text-center d-flex align-items-center justify-content-center">
               <img
-                src="img/mock-up.png"
+                src="../public/img/mock-up.png"
                 alt="Mockup de la app"
                 className="img-fluid mockup-image"
               />

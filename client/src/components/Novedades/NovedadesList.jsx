@@ -88,9 +88,9 @@ function NovedadesList() {
     <Link to="nueva" className="btn-agregar">Agregar Nueva Novedad</Link>
   </div>
 
-  <form className='buscador'>
+  <div className='buscador'>
     <input type="text" placeholder='Buscar por nombre' value={search} onChange={handleSearchChange} className='input-buscar'/>
-    <button type='submit' className='button-buscar'>Buscar</button>
+    
     {
       suggestions.length > 0 && (
       <ul>
@@ -102,7 +102,7 @@ function NovedadesList() {
       </ul>
       )
     }
-  </form>
+  </div>
   
   {error && <p className="error">{error}</p>}
   <div className="novedades-container">
