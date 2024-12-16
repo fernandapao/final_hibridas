@@ -41,7 +41,7 @@ function FuncionesList() {
   return (
     <div>
       <h2 className="titulo">Funciones</h2>
-      <div className="btn-agregar">
+      <div className="btn-container">
         <Link to="nueva" className="btn-agregar">Agregar Nueva Función</Link>
       </div>
       {error && <p className="error">{error}</p>}
@@ -49,7 +49,6 @@ function FuncionesList() {
         {funciones.map(funcion => (
           <div className="funcion-card" key={funcion._id}>
             <div className="card w-100">
-              {/* Imagen fija para todas las tarjetas */}
               <img
                 src="../../img/novedad.jpg"
                 className="card-img-top"
@@ -62,13 +61,13 @@ function FuncionesList() {
               <div className="card-footer d-flex justify-content-between">
                 <button
                   onClick={() => handleEdit(funcion._id)}
-                  className="btn btn-warning btn-sm"
+                  className="btn-abm btn-warning btn-sm"
                 >
                   Editar
                 </button>
                 <button
                   onClick={() => handleDelete(funcion._id)}
-                  className="btn btn-danger btn-sm"
+                  className="btn-abm btn-danger btn-sm"
                 >
                   Eliminar
                 </button>

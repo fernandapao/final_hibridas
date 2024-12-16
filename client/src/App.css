@@ -153,3 +153,7 @@ Routes {
 .card-img-top {
   width: 100%;
 }
+
+.btn-abm {
+  margin: 20px;
+}
