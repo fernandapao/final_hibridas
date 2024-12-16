@@ -147,3 +147,9 @@ Routes {
   text-align: center;
   padding: 10px 0;
 }
+
+/* imagenes tarjetas */
+
+.card-img-top {
+  width: 100%;
+}
