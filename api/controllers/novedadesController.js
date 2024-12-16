@@ -62,15 +62,14 @@ export const getNovedadById = async (req, res) => {
 
 export const updateNovedad = async (req, res) => {
     const { id } = req.params;
-    const { nombre, descripcion, categoria, fecha, imagen } = req.body;
+    const { nombre, descripcion, categoria, fecha } = req.body;
 
     try {
         const novedad = await Novedad.findByIdAndUpdate(id, {
             nombre,
             descripcion,
             categoria,
-            fecha,
-            imagen  // Asegúrate de actualizar la imagen también
+            fecha
         }, { new: true });
 
         res.json(novedad);

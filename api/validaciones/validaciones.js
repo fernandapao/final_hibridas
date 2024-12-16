@@ -13,8 +13,7 @@ export const novedadesValidacion = (data) => {
         nombre: Joi.string().min(3).max(50).required(),
         descripcion: Joi.string().min(5).max(255).required(),
         categoria: Joi.string().min(5).max(400).required(),
-        fecha: Joi.date().required(),
-        imagen: Joi.string().optional()
+        fecha: Joi.date().required()
 
     });
 
