@@ -126,3 +126,24 @@ nav ul li a {
 .dashboard-menu {
   padding: 20px;
 }
+
+/* footer de dashboard */
+
+.dashboard-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.dashboard-section,
+.dashboard-menu,
+Routes {
+  flex: 1; 
+}
+
+.footer {
+  background-color: #002855; 
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
