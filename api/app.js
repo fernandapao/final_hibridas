@@ -6,6 +6,7 @@ import cors from "cors";
 
 
 
+
 mongoose.connect('mongodb://127.0.0.1:27017/aplihibridas')
   .then(() => console.log('Conexión con Mongo exitosa!'))
   .catch((error) => console.error('Error al conectar con MongoDB:', error));
@@ -24,7 +25,7 @@ const options = {
 }
 
 app.use(cors(options));
-app.use(cors());
+
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
@@ -51,6 +52,7 @@ function verificarRol(rolesAdmitidos) {
 app.get("/panel", verificarRol(["admin", "super-admin"]), (req, res) =>{
     res.send("Acceso permitido")
 });
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {

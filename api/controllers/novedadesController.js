@@ -60,13 +60,23 @@ export const getNovedadById = async (req, res) => {
     }
 };
 
+
 export const updateNovedad = async (req, res) => {
+    const { id } = req.params;
+    const { nombre, descripcion, categoria, fecha, imagen } = req.body;
+
     try {
-        const actualizarNovedad = await Novedad.findByIdAndUpdate(req.params.id, req.body, {new: true})
-        res.json(actualizarNovedad)
-            
-    }catch(err){
-        res.status(400).json({error:err.message})
+        const novedad = await Novedad.findByIdAndUpdate(id, {
+            nombre,
+            descripcion,
+            categoria,
+            fecha,
+            imagen  // Asegúrate de actualizar la imagen también
+        }, { new: true });
+
+        res.json(novedad);
+    } catch (err) {
+        res.status(400).json({ error: err.message });
     }
 };
 

@@ -8,7 +8,8 @@ function NovedadForm() {
     nombre: '',
     descripcion: '',
     categoria: '',
-    fecha: ''
+    fecha: '',
+    imagen: ''
   });
   const [error, setError] = useState('');
   const { id } = useParams();
@@ -29,10 +30,17 @@ function NovedadForm() {
   }, [id]);
 
 
-  const { nombre, descripcion, categoria, fecha } = formData;
+  const { nombre, descripcion, categoria, fecha, imagen } = formData;
 
   const handleChange = (e) => {
     setFormData({...formData, [e.target.name]: e.target.value});
+  };
+
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setFormData({ ...formData, imagen: URL.createObjectURL(file) }); // Puedes utilizar una URL temporal para previsualizar la imagen
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -92,6 +100,15 @@ function NovedadForm() {
             onChange={handleChange}
             required 
           />
+        </div>
+        <div>
+          <label>Imagen:</label>
+          <input 
+            type="file" 
+            name="imagen"
+            onChange={handleImageChange}
+          />
+          {imagen && <img src={imagen} alt="Preview" width="100" />} {/* Vista previa de la imagen cargada */}
         </div>
         <button type="submit">{id ? 'Actualizar' : 'Guardar'}</button>
       </form>

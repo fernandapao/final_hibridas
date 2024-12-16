@@ -106,12 +106,13 @@ function NovedadesList() {
   
   {error && <p className="error">{error}</p>}
   <div className="novedades-container">
-    {novedades.map(novedad => (
-      <div className="novedad-card" key={novedad._id}>
-        <h3>{novedad.nombre}</h3>
-        <p>{novedad.descripcion}</p>
-        <p>Categoría: {novedad.categoria}</p>
-        <p>Fecha: {new Date(novedad.fecha).toLocaleDateString()}</p>
+  {novedades.map((novedad) => (
+    <div className="novedad-card" key={novedad._id}>
+      {novedad.imagen && <img src={novedad.imagen} alt={novedad.nombre} width="100" />} {/* Mostrar imagen */}
+      <h3>{novedad.nombre}</h3>
+      <p>{novedad.descripcion}</p>
+      <p>Categoría: {novedad.categoria}</p>
+      <p>Fecha: {new Date(novedad.fecha).toLocaleDateString()}</p>
         <div className="novedad-buttons">
           <button onClick={() => handleEdit(novedad._id)} className="btn-editar">Editar</button>
           <button onClick={() => handleDelete(novedad._id)} className="btn-eliminar">Eliminar</button>
